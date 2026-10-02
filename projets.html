@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quatorze projets de data analyse, Charles Lippens</title>
+  <meta name="description" content="Les quatorze projets du parcours Data Analyst de Charles Lippens, douze validés : contexte et besoin, démarche, résultats, données, limites et pistes, livrables.">
+  <meta name="author" content="Charles Lippens">
+  <meta name="theme-color" content="#0B1220">
+  <link rel="canonical" href="https://charleslippensdata.github.io/portfolio-v2/projets.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Charles Lippens, Data Analyst">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Quatorze projets de data analyse, Charles Lippens">
+  <meta property="og:description" content="Les quatorze projets du parcours Data Analyst de Charles Lippens, douze validés : contexte et besoin, démarche, résultats, données, limites et pistes, livrables.">
+  <meta property="og:url" content="https://charleslippensdata.github.io/portfolio-v2/projets.html">
+  <meta property="og:image" content="https://charleslippensdata.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Charles Lippens, Data Analyst">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/img/favicon-192.png">
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(){var t="dark";try{var s=localStorage.getItem("pf-v2-theme");if(s==="dark"||s==="light"){t=s;}}catch(e){}document.documentElement.setAttribute("data-theme",t);})();</script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="saut" href="#contenu">Aller au contenu</a>
+<header class="entete">
+  <div class="entete-inner">
+    <a class="marque" href="index.html"><span class="logo" aria-hidden="true">CL</span><span class="marque-texte">Charles Lippens<small>Data Analyst, consultant data et BI</small></span></a>
+    <button class="bouton-icone burger" id="burger" type="button" aria-expanded="false" aria-controls="menu"><span class="burger-barres" aria-hidden="true"><span></span><span></span><span></span></span><span class="vh">Menu</span></button>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html" aria-current="page">Projets</a></li>
+        <li><a href="mission-ia.html">Mission IA</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="bouton-icone theme-toggle" type="button" aria-pressed="true" title="Thème sombre ou clair"><svg class="ico-lune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="ico-soleil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span class="vh">Thème sombre</span></button>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+  <div class="tete-page">
+    <div class="conteneur">
+      <p class="eyebrow">Registre des projets</p>
+      <h1>Quatorze projets, douze validés, chacun avec ses livrables</h1>
+      <p class="lead">Chaque fiche suit la même trame : contexte et besoin, démarche, résultats, données, limites et pistes, puis les livrables à télécharger. Les cinq projets phares, marqués ✶, sont classés par pertinence pour un poste de Data Analyst ou de consultant data et BI, puis par résultat mesuré, puis par date ; les autres suivent, du plus récent au plus ancien.</p>
+    </div>
+  </div>
+
+  <section class="section section--serree" aria-label="Fiches des projets">
+    <div class="conteneur">
+      <div class="filtres" role="group" aria-label="Filtrer les projets par domaine">
+        <button class="filtre" type="button" data-filtre="tous" aria-pressed="true">Tous</button>
+        <button class="filtre" type="button" data-filtre="phare" aria-pressed="false">Projets phares</button>
+        <button class="filtre" type="button" data-filtre="python" aria-pressed="false">Python</button>
+        <button class="filtre" type="button" data-filtre="sql" aria-pressed="false">SQL et data engineering</button>
+        <button class="filtre" type="button" data-filtre="dataviz" aria-pressed="false">Dataviz et BI</button>
+        <button class="filtre" type="button" data-filtre="ml" aria-pressed="false">Machine learning et IA</button>
+        <button class="filtre" type="button" data-filtre="conseil" aria-pressed="false">Conseil et pilotage</button>
+      </div>
+      <p class="vh" id="projets-compte" aria-live="polite"></p>
+      <div class="grille-projets" id="grille-projets">
+        <article class="projet is-phare" id="p13" data-cat="python ml conseil phare" aria-labelledby="p13-titre">
+          <div class="projet-tete"><span class="projet-code"><span class="etoile" aria-hidden="true">✶</span> P13<span class="vh">, projet phare</span></span><span class="etat etat-cours">En cours depuis sept. 2026</span></div>
+          <h2 id="p13-titre">Piloter un projet data augmenté par l'IA</h2>
+          <p class="client">Mission BottleNeck, marchand de vins, et ce portfolio · 70 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> reprendre mon notebook du projet 6 et l'améliorer avec l'IA. La direction et les services de BottleNeck ont besoin de chiffres fiables de ventes, de marges et de stocks chaque mois, pour décider quoi réassortir en priorité et quelles erreurs faire corriger dans l'ERP et sur le site.</p>
+          <p class="rubrique"><strong>Démarche :</strong> veille, cahier des charges, preuve de concept en quatre axes, chaque outil comparé sur sept critères, audit de conformité en quatre passages.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> règles de l'ERP en 14 lignes, 26 anomalies captées en plus, modèle de ventes à R² 0,72 (de 0,53 à 0,76 selon le découpage), réassort à partir de 14 références clés à stock nul.</p>
+          <p class="rubrique"><strong>Données :</strong> les trois extractions du projet 6 (ERP, site, liaison), 825 lignes ERP, 714 produits rapprochés, aucune donnée personnelle.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> échantillon réduit, anomalies à confirmer avec le métier, modèle qui explique ses prédictions sans prouver de causes, gain de calcul qui dépend de la machine. Pistes : contrôle qualité branché sur chaque import, historisation des ventes, prévision de la demande.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>IA générative</li><li>Pandera</li><li>scikit-learn</li><li>SHAP</li><li>Veille</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="mission-ia.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg>Voir la mission</a></li><li><a href="https://charleslippensdata.github.io/livrables/Lippens_Charles_1_projet_ameliore_092026.ipynb" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook (IPYNB)</a></li><li><a href="https://charleslippensdata.github.io/livrables/Lippens_Charles_2_synthese_globale_092026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>synthèse (PDF)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet is-phare" id="p11" data-cat="python ml phare" aria-labelledby="p11-titre">
+          <div class="projet-tete"><span class="projet-code"><span class="etoile" aria-hidden="true">✶</span> P11<span class="vh">, projet phare</span></span><span class="etat etat-valide">Validé · août 2026</span></div>
+          <h2 id="p11-titre">Étude de marché internationale</h2>
+          <p class="client">La poule qui chante, poulet bio, export · 90 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> désigner des groupes de pays cibles pour un premier export, à partir de données ouvertes seulement.</p>
+          <p class="rubrique"><strong>Démarche :</strong> 172 pays et 14 variables, analyse en composantes principales à quatre composantes (65 % de l'inertie), classification hiérarchique et K-Means comparés (indice de Rand ajusté 0,58).</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> un cluster cible de 21 pays et 2,1 milliards de dollars de potentiel de marché ; plan d'action à 24 mois présenté au COMEX, avec un pilote recommandé en Allemagne ou au Royaume-Uni.</p>
+          <p class="rubrique"><strong>Données :</strong> neuf fichiers ouverts (FAO 2017, population 2000 à 2018, Banque mondiale, gouvernance, taux de change figé au 30 juillet 2026) ; 172 pays conservés, 97,6 % de la population mondiale.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> données de 2017 pour les bilans alimentaires, indicateurs macro sans détail des circuits de distribution. Pistes : actualiser les millésimes, ajouter des données douanières, mesurer la sensibilité des clusters au nombre de variables.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>ACP</li><li>Clustering</li><li>scikit-learn</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P11/Lippens_Charles_1_preparation_nettoyage_analyse_exploratoire_072026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook 1, exploration (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P11/Lippens_Charles_2_clustering_visualisations_072026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook 2, clustering (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P11/Lippens_Charles_3_presentation_072026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>présentation (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P11/Lippens_Charles_1_preparation_nettoyage_analyse_exploratoire_072026.ipynb" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook 1 (IPYNB)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P11/Lippens_Charles_2_clustering_visualisations_072026.ipynb" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook 2 (IPYNB)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P11/Lippens_Charles_4_recommandations_21_pays_072026.csv" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>21 pays cibles (CSV)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet is-phare" id="p10" data-cat="dataviz python conseil phare" aria-labelledby="p10-titre">
+          <div class="projet-tete"><span class="projet-code"><span class="etoile" aria-hidden="true">✶</span> P10<span class="vh">, projet phare</span></span><span class="etat etat-valide">Validé · juin 2026</span></div>
+          <h2 id="p10-titre">Étude sur l'accès à l'eau potable</h2>
+          <p class="client">ONG DWFA, Drinking Water For All · 70 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> orienter un financement vers un pays et un domaine d'expertise, avec un tableau de bord accessible et narratif.</p>
+          <p class="rubrique"><strong>Démarche :</strong> prétraitement en Python et schéma en étoile ; blueprint et maquettes validés avant d'ouvrir l'outil ; quatre vues enchaînées dans une histoire Tableau Public.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> 89,7 % d'accès basique mondial, 16 pays sous 60 % d'accès, un ciblage par domaine d'expertise avec un seuil de stabilité politique réglable ; contrastes et légendes accessibles.</p>
+          <p class="rubrique"><strong>Données :</strong> cinq sources ouvertes (OMS et UNICEF, ONU, FAO, Banque mondiale), 194 pays de 2000 à 2017.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> agrégats nationaux qui masquent les disparités régionales, séries arrêtées en 2017, indicateurs de stabilité politique subjectifs. Pistes : données infranationales, actualisation annuelle, indicateur composite pondéré avec l'ONG.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>Tableau Public</li><li>Dataviz</li><li>Accessibilité</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P10/Lippens_Charles_1_presentation_052026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>présentation (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P10/Lippens_Charles_2_dashboard_052026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>tableau de bord (PDF)</a></li><li><a href="https://public.tableau.com/app/profile/charles.lippens/viz/Etude_eau_potable_DWFA_Lippens_Charles/Histoire_DWFA_Eau_Potable" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>histoire interactive sur Tableau Public<span class="vh"> (nouvel onglet)</span></a></li></ul>
+          </div>
+        </article>
+        <article class="projet is-phare" id="p8" data-cat="sql phare" aria-labelledby="p8-titre">
+          <div class="projet-tete"><span class="projet-code"><span class="etoile" aria-hidden="true">✶</span> P8<span class="vh">, projet phare</span></span><span class="etat etat-valide">Validé · avr. 2026</span></div>
+          <h2 id="p8-titre">Profils sociodémographiques avec dbt et Snowflake</h2>
+          <p class="client">Pipeline de données, entrepôt Snowflake · 60 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> industrialiser la préparation de données avec un pipeline fiable et testé.</p>
+          <p class="rubrique"><strong>Démarche :</strong> modèles dbt sur Snowflake, couches de staging et de marts, tests de cohérence, documentation et versionnage, agrégations conformes au RGPD.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> un modèle documenté et reproductible, dont la qualité est vérifiée par les tests dbt à chaque exécution.</p>
+          <p class="rubrique"><strong>Données :</strong> 4 647 lignes d'étudiants OpenClassrooms de 2022 à 2025 et estimations de population INSEE 2023 ; genre non renseigné conservé comme catégorie.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> non-réponse sur le genre variable selon l'année, comparaison à une seule année INSEE, région de résidence déclarative. Pistes : tests dbt sur la fraîcheur des sources, historisation des comparaisons, tableau de bord branché sur les marts.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>dbt</li><li>Snowflake</li><li>Tests</li><li>Data marts</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P8/Lippens_Charles_2_workflow_DBT_avec_commentaires_032026.zip" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>workflow dbt commenté (ZIP)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P8/Lippens_Charles_3_support_de_presentation_032026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>présentation (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P8/Lippens_Charles_1_fichier_csv_exporte_mart_livrable_csv_032026.csv" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>mart (CSV)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet is-phare" id="p7" data-cat="dataviz conseil phare" aria-labelledby="p7-titre">
+          <div class="projet-tete"><span class="projet-code"><span class="etoile" aria-hidden="true">✶</span> P7<span class="vh">, projet phare</span></span><span class="etat etat-valide">Validé · mars 2026</span></div>
+          <h2 id="p7-titre">Tableau de bord dynamique Power BI</h2>
+          <p class="client">Sanitoral, groupe international, suivi de projets · 60 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> suivre l'avancement d'un portefeuille de projets à l'international.</p>
+          <p class="rubrique"><strong>Démarche :</strong> modèle de données, mesures DAX, tableau de bord de pilotage, posture de consultant pour cadrer les indicateurs avec le client.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> un tableau de bord de neuf pages, validé en soutenance, qui suit 104 projets découpés en 520 phases et signale chaque dépassement de plus de 15 % du prévu.</p>
+          <p class="rubrique"><strong>Données :</strong> plan de projets, coûts et livrables du fabricant Sanitoral, préparés avec Power Query, clés uniques contrôlées, modèle en étoile.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> données figées à la remise, types de graphiques peu variés, quelques visuels de questions et réponses à corriger selon l'évaluateur. Pistes : actualisation planifiée, rôles et filtres par direction, alertes sur les dépassements.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>Power BI</li><li>DAX</li><li>Modélisation</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P7/Lippens_Charles_1_tableau_de_bord_022026.pbix" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>tableau de bord (PBIX)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p12" data-cat="python ml" aria-labelledby="p12-titre">
+          <div class="projet-tete"><span class="projet-code">P12</span><span class="etat etat-valide">Validé · sept. 2026</span></div>
+          <h2 id="p12-titre">Détecter des faux billets avec Python</h2>
+          <p class="client">ONCFM, lutte contre le faux-monnayage · 70 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> décider si un billet est vrai ou faux à partir de six mesures géométriques.</p>
+          <p class="rubrique"><strong>Démarche :</strong> imputation par régression des 37 valeurs manquantes, analyse en composantes principales, quatre modèles comparés en validation croisée (régression logistique, k plus proches voisins, random forest, K-Means), seuil arbitré selon le coût des erreurs.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> régression logistique retenue ; 99,0 % de bonnes classifications, F1 0,993, ROC-AUC 0,9995 ; application Streamlit livrée, trois faux détectés sur les cinq billets de production.</p>
+          <p class="rubrique"><strong>Données :</strong> 1 500 billets (1 000 vrais, 500 faux), six dimensions géométriques ; jeu fourni par l'ONCFM, sans historique de contrefaçons.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> jeu d'entraînement modeste, dérive possible si les contrefaçons évoluent, probabilités non calibrées. Pistes : calibration, suivi de dérive et réentraînement, industrialisation via une API.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>Classification</li><li>scikit-learn</li><li>Streamlit</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P12/Lippens_Charles_3_Presentation_082026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>présentation (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P12/Lippens_Charles_1_Notebook_analyse_082026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P12/Lippens_Charles_1_Notebook_analyse_082026.ipynb" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook (IPYNB)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P12/Lippens_Charles_2_Application_082026.py" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>application Streamlit (PY)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P12/Lippens_Charles_2_Application_terminal_082026.py" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>application terminal (PY)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P12/resultats.csv" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>verdicts sur les billets de production (CSV)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p9" data-cat="python ml" aria-labelledby="p9-titre">
+          <div class="projet-tete"><span class="projet-code">P9</span><span class="etat etat-valide">Validé · mai 2026</span></div>
+          <h2 id="p9-titre">Analyse des ventes d'une librairie</h2>
+          <p class="client">Lapage, librairie passée à la vente en ligne · 90 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> comprendre les ventes et les comportements clients pour orienter le marketing.</p>
+          <p class="rubrique"><strong>Démarche :</strong> indicateurs et séries temporelles, corrélations entre comportements, tests statistiques pour valider ou infirmer les hypothèses.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> 12,0 millions d'euros de chiffre d'affaires sur 24 mois, dont 80 % sur 700 produits ; l'âge pèse sur le panier moyen (corrélation de -0,70) et sur la catégorie achetée, le genre presque pas ; six recommandations fondées sur des tests.</p>
+          <p class="rubrique"><strong>Données :</strong> transactions, produits et clients de la librairie sur deux ans, jointes et nettoyées ; comportements B2B et B2C distingués.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> deux années seulement pour lire la saisonnalité, tailles d'effet négligeables ou faibles pour trois des cinq tests, malgré des p-valeurs significatives. Pistes : troisième année d'historique, segmentation plus fine, suivi mensuel des indicateurs.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>Statistiques</li><li>Séries temporelles</li><li>Corrélations</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P9/Lippens_Charles_1_notebook_analyse_indicateurs_ventes_052026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook indicateurs (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P9/Lippens_Charles_2_notebook_analyse_correlations_052026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook corrélations (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P9/Lippens_Charles_2_support_052026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>présentation (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P9/Lippens_Charles_1_notebook_analyse_indicateurs_ventes_052026.ipynb" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook 1 (IPYNB)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P9/Lippens_Charles_2_notebook_analyse_correlations_052026.ipynb" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook 2 (IPYNB)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p6" data-cat="python sql" aria-labelledby="p6-titre">
+          <div class="projet-tete"><span class="projet-code">P6</span><span class="etat etat-valide">Validé · déc. 2025</span></div>
+          <h2 id="p6-titre">Optimiser la gestion des données d'une boutique</h2>
+          <p class="client">BottleNeck, marchand de vins · 70 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> rapprocher l'ERP et le site web pour fiabiliser le catalogue et reconstituer le chiffre d'affaires.</p>
+          <p class="rubrique"><strong>Démarche :</strong> nettoyage, jointures, détection d'incohérences, analyses uni- et multivariées, respect du RGPD.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> une base saine de 714 produits, 9 types d'anomalies identifiés, un chiffre d'affaires reconstitué de 143 680 euros ; le socle du projet 13.</p>
+          <p class="rubrique"><strong>Données :</strong> ERP (825 lignes), site de vente (1 513 lignes) et table de liaison ; unicité des clés vérifiée, valeurs manquantes traitées.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> détection d'anomalies sur une seule variable, contrôles écrits à la main non rejouables ; l'évaluateur a signalé le risque de corriger un prix négatif par sa valeur absolue. Pistes réalisées dans le projet 13 : contrat de données qui signale sans corriger, détection multivariée, explication des ventes.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>pandas</li><li>Nettoyage</li><li>Jointures</li><li>Qualité</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P6/Lippens_Charles_2_presentation_122025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>présentation (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P6/Lippens_Charles_1_notebook_122025.ipynb" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook (IPYNB)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p5" data-cat="sql" aria-labelledby="p5-titre">
+          <div class="projet-tete"><span class="projet-code">P5</span><span class="etat etat-valide">Validé · nov. 2025</span></div>
+          <h2 id="p5-titre">Base de données immobilière sous SQL et PostgreSQL</h2>
+          <p class="client">Secteur immobilier, modélisation · 60 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> un modèle de données conforme aux besoins et aux normes.</p>
+          <p class="rubrique"><strong>Démarche :</strong> conception du schéma, dictionnaire de données, requêtes en respect du RGPD sur PostgreSQL.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> quatre tables PostgreSQL (34 151 ventes) et douze requêtes métier ; au premier semestre 2020, 31 378 appartements vendus, dont 13 995 en Île-de-France, et 11 916 euros le mètre carré en moyenne à Paris.</p>
+          <p class="rubrique"><strong>Données :</strong> valeurs foncières DVF, recensement INSEE et référentiel communal de data.gouv, vérifiés au regard du RGPD.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> schéma visuel à détailler et section de maintenance à ajouter selon l'évaluateur, extraction limitée à 2020. Pistes : index et procédures de maintenance, historisation annuelle, vues métier pour les agences.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>SQL</li><li>PostgreSQL</li><li>RGPD</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P5/Lippens_Charles_1_dictionnaire_de_donnees_112025.xlsx" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>dictionnaire de données (XLSX)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P5/Lippens_Charles_2_support_presentation_112025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>présentation (PDF)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p4" data-cat="python" aria-labelledby="p4-titre">
+          <div class="projet-tete"><span class="projet-code">P4</span><span class="etat etat-valide">Validé · nov. 2025</span></div>
+          <h2 id="p4-titre">Étude de santé publique avec Python</h2>
+          <p class="client">FAO, sous-nutrition mondiale · 80 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> mesurer la sous-nutrition à l'échelle mondiale et la restituer à un public non expert.</p>
+          <p class="rubrique"><strong>Démarche :</strong> nettoyage de données massives, indicateurs normalisés, vulgarisation.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> en 2017, 535,7 millions de personnes en sous-nutrition, soit 7 % de la population mondiale, alors que les disponibilités alimentaires couvriraient 123 % des besoins ; des indicateurs comparables entre pays, restitués aux décideurs.</p>
+          <p class="rubrique"><strong>Données :</strong> bilans alimentaires et données démographiques de la FAO, jointes, restreintes et agrégées.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> indicateurs nationaux sans détail infranational, hypothèses de conversion des disponibilités alimentaires. Pistes : séries pluriannuelles, croisement avec des données de prix, visualisation interactive.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>Python</li><li>Nettoyage</li><li>Indicateurs</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P4/LIPPENS_Charles_2_notebook-pdf_102025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P4/Lippens_Charles_3_presentation_102025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>présentation (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P4/LIPPENS_Charles_1_notebook_102025.ipynb" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>notebook (IPYNB)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p3" data-cat="sql" aria-labelledby="p3-titre">
+          <div class="projet-tete"><span class="projet-code">P3</span><span class="etat etat-valide">Validé · oct. 2025</span></div>
+          <h2 id="p3-titre">Requêter une base de données avec SQL</h2>
+          <p class="client">Assurance habitation · 30 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> outiller la décision à partir d'une base relationnelle.</p>
+          <p class="rubrique"><strong>Démarche :</strong> chargement, schéma, scripts SQL d'aide à la décision, méthodologie documentée.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> les douze requêtes demandées, exécutées sur plus de 30 000 contrats chargés dans MySQL ; l'Île-de-France réunit le plus de contrats (14 177) et Paris a la cotisation mensuelle moyenne la plus élevée.</p>
+          <p class="rubrique"><strong>Données :</strong> contrats d'assurance habitation et référentiel des régions de data.gouv, chargés avec contrôle du nombre de lignes.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> indicateurs jugés perfectibles sur le plan métier par l'évaluateur, support visuel à améliorer. Pistes : requêtes orientées décision (sinistralité, marge), vues et procédures stockées.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>SQL</li><li>Modélisation</li><li>Aide à la décision</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P3/Lippens_Charles_1_document_technique_102025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>document technique (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P3/Lippens_Charles_2_liste_102025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>requêtes (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P3/Lippens_Charles_3_methodologie_102025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>méthodologie (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P3/Lippens_Charles_4_grille_102025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>grille (PDF)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p2" data-cat="dataviz python" aria-labelledby="p2-titre">
+          <div class="projet-tete"><span class="projet-code">P2</span><span class="etat etat-valide">Validé · oct. 2025</span></div>
+          <h2 id="p2-titre">Analyse de ventes pour un e-commerce</h2>
+          <p class="client">Le Grand Marché, service marketing · 40 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> un rapport mensuel exploitable par le marketing.</p>
+          <p class="rubrique"><strong>Démarche :</strong> analyse des ventes et des clients, dataviz, récit adapté à l'auditoire.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> cinq graphiques : le chiffre d'affaires baisse avec la disparition du high-tech, le taux de conversion est divisé par deux, le temps médian avant un achat passe de 7,1 à 6,2 minutes ; trois pistes pour le marketing.</p>
+          <p class="rubrique"><strong>Données :</strong> ventes, chiffre d'affaires, prix et taux de conversion du Grand Marché, clients affiliés ; graphiques conformes aux contrastes AA et AAA.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> une seule année observée, de mars 2019 à février 2020, projections indicatives ; l'évaluateur invite à creuser l'utilisabilité des graphiques. Pistes : suivi mensuel automatisé, segmentation des affiliés, tableau de bord partagé.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>Dataviz</li><li>Récit</li><li>Restitution</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P2/LIPPENS_Charles_1_rapport_mensuel_092025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>rapport mensuel (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P2/LIPPENS_Charles_2_clients_affilies_092025.xlsx" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>analyse des clients affiliés (XLSX)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p1" data-cat="conseil" aria-labelledby="p1-titre">
+          <div class="projet-tete"><span class="projet-code">P1</span><span class="etat etat-valide">Validé · oct. 2025</span></div>
+          <h2 id="p1-titre">Prise en main de la formation Data Analyst</h2>
+          <p class="client">Cadrage du parcours · 14 h</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> poser les bases du métier et de la posture.</p>
+          <p class="rubrique"><strong>Démarche :</strong> cadrage du parcours, compétences relationnelles, posture du data analyst.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> une feuille de route et une posture professionnelle dès le départ.</p>
+          <p class="rubrique"><strong>Données :</strong> fiches de cadrage et grille d'auto-évaluation de début de parcours, sans jeu de données.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> auto-évaluation initiale par nature subjective ; qualité des visuels signalée comme axe de progrès. Piste : relire la grille en fin de parcours pour mesurer la progression.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>Posture</li><li>Organisation</li></ul>
+          <div class="projet-livrables">
+            <h3 class="mini-titre">Livrables</h3>
+            <ul class="liens-dl"><li><a href="https://charleslippensdata.github.io/livrables/projets/P1/Charles_Lippens_1_fiche_decouverte_debut_formation_092025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>fiche découverte (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P1/Charles_Lippens_2_fiche_decouverte_attentes_metier_092025.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>attentes métier (PDF)</a></li><li><a href="https://charleslippensdata.github.io/livrables/projets/P1/Charles_Lippens_3_grille_auto_evaluation_092025.xlsx" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>grille d'auto-évaluation (XLSX)</a></li></ul>
+          </div>
+        </article>
+        <article class="projet" id="p14" data-cat="conseil" aria-labelledby="p14-titre">
+          <div class="projet-tete"><span class="projet-code">P14</span><span class="etat etat-venir">À venir · oct. 2026</span></div>
+          <h2 id="p14-titre">Mission en entreprise : Consultant Data / BI et Data Analyst chez S4R</h2>
+          <p class="client">S4R, stage d'environ deux mois, dernière étape avant le diplôme</p>
+          <p class="rubrique"><strong>Contexte et besoin :</strong> mettre l'ensemble des compétences à l'épreuve d'un besoin métier réel.</p>
+          <p class="rubrique"><strong>Démarche :</strong> mission data en entreprise, du cadrage du besoin aux tableaux de bord et à la restitution.</p>
+          <p class="rubrique rubrique-resultats"><strong>Résultats :</strong> à venir ; les livrables partageables seront ajoutés après la soutenance.</p>
+          <p class="rubrique"><strong>Données :</strong> celles de la mission, à décrire après accord de l'entreprise.</p>
+          <p class="rubrique"><strong>Limites et pistes :</strong> à rédiger à l'issue du stage.</p>
+          <ul class="tags" aria-label="Outils et thèmes"><li>Terrain</li><li>Mission</li></ul>
+        </article>
+      </div>
+      <p class="projets-vide" id="projets-vide" hidden>Aucun projet ne correspond à ce filtre.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <div class="pied-grille">
+      <div class="pied-marque">
+        <p class="pied-nom">Charles Lippens</p>
+        <p>Data Analyst, consultant data et BI, à Montpellier. Stage chez S4R à partir d'octobre 2026, disponible fin 2026.</p>
+      </div>
+      <nav class="pied-bloc" aria-label="Pages du site">
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="mission-ia.html">Mission IA</a></li>
+          <li><a href="veille.html">Veille</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="pied-bloc">
+        <h2>Ailleurs</h2>
+        <ul>
+          <li><a href="mailto:charles.lippens@orange.fr">charles.lippens@orange.fr</a></li>
+          <li><a href="https://www.linkedin.com/in/charleslippens/" target="_blank" rel="noopener">LinkedIn<span class="vh"> (nouvel onglet)</span></a></li>
+          <li><a href="https://github.com/CharlesLippensData" target="_blank" rel="noopener">GitHub<span class="vh"> (nouvel onglet)</span></a></li>
+          <li><a href="https://charleslippensdata.github.io/livrables/CV_Charles_Lippens.pdf" download>CV au format PDF</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mentions">
+      <h2>Mentions et confidentialité</h2>
+      <p>Ce site de six pages est la version 2 de mon portfolio. Le même contenu existe en <a href="https://charleslippensdata.github.io/">dossier éditorial</a> (version 4, la référence) et en <a href="https://charleslippensdata.github.io/portfolio-v3/">page unique</a> (version 3) ; les trois renvoient aux mêmes documents, publiés une seule fois sur le site principal.</p>
+      <p>Éditeur et responsable de publication : Charles Lippens, Montpellier, <a href="mailto:charles.lippens@orange.fr">charles.lippens@orange.fr</a>. Hébergement : GitHub Pages, GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. L'hébergeur enregistre l'adresse IP des visiteurs pour la sécurité du service.</p>
+      <p>Site statique en HTML, CSS et JavaScript, sans cookie, sans mesure d'audience et sans formulaire. Les polices Space Grotesk et Inter, sous licence SIL Open Font License, sont hébergées avec le site : les pages ne chargent rien depuis un autre serveur. Le thème sombre ou clair se mémorise dans votre navigateur seulement. Les données des projets de formation sont des jeux fournis ou ouverts ; aucune donnée personnelle de tiers n'est publiée. Les figures du projet 13 sont redessinées à partir des sorties du notebook (exécution livrée du 4 août 2026, mêmes données) ; la capture de la veille date du 17 septembre 2026.</p>
+      <p>© 2026 Charles Lippens. Dernière mise à jour : 1er octobre 2026.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
