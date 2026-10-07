@@ -5,7 +5,7 @@ https://charleslippensdata.github.io/portfolio-v2/.
 
 ## Les trois versions
 
-Le même contenu, à jour au 1er octobre 2026, existe en trois présentations. Toutes renvoient aux mêmes documents, publiés une
+Le même contenu, à jour au 2 octobre 2026, existe en trois présentations. Toutes renvoient aux mêmes documents, publiés une
 seule fois sur le site principal, dans le dossier `livrables/`.
 
 | Version | Présentation | Adresse |
@@ -59,4 +59,4 @@ pour les ouvrir.
 
 Textes, figures et code : © 2026 Charles Lippens. Polices : SIL Open Font License 1.1.
 
-Dernière mise à jour : 1er octobre 2026.
+Dernière mise à jour : 2 octobre 2026.
