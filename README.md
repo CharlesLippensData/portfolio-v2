@@ -50,7 +50,7 @@ pour les ouvrir.
 - Les polices et les images sont hébergées avec le site : les pages ne chargent rien depuis un autre serveur.
 - Le thème choisi se mémorise dans le navigateur seulement (clé `pf-v2-theme` du stockage local).
 - Les données des projets de formation sont des jeux fournis ou ouverts ; aucune donnée personnelle de tiers n'est
-  publiée. Les figures sont redessinées à partir des sorties du notebook du projet 13 (exécution livrée du 4 août 2026,
+  publiée. Les figures sont redessinées à partir des sorties du notebook du projet 13 (exécution livrée,
   mêmes données).
 - Hébergement : GitHub Pages (GitHub, Inc., San Francisco, États-Unis), qui enregistre l'adresse IP des visiteurs pour
   la sécurité du service.
